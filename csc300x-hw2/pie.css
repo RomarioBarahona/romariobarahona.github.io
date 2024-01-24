@@ -39,14 +39,19 @@ h2 {
 }
 
 u {
-    text-underline-offset: 4px;
     text-decoration-style: dotted;
+    text-underline-offset: .25em;
+    position: relative;
 }
 
-u1 {
-    text-decoration: underline;
-    text-underline-offset: 1px;
-
+u::before {
+    content: "";
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid;
+    z-index: -1;
 }
 
 a {
