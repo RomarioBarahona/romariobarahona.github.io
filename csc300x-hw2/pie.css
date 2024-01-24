@@ -5,13 +5,25 @@ body {
     color: #404040;
 }
 
-h1, h2 {
+h1,
+h2 {
     color: #A4A400;
     background-color: #F0F0F0;
     text-decoration: underline;
     font-family: 'Lucida Sans Unicode', 'Helvetica', 'Arial', sans-serif;
-    
+
 }
+
+hr { 
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    height: 2px;
+    border-width: 0;
+    background-color: black;
+} 
 
 h1 {
     text-align: center;
@@ -34,8 +46,9 @@ u {
 u1 {
     text-decoration: underline;
     text-underline-offset: 1px;
-    
+
 }
+
 a {
     color: #A4A400;
 }
@@ -73,4 +86,3 @@ footer pre {
     white-space: pre;
     text-align: left;
 }
-
