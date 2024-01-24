@@ -1,0 +1,76 @@
+body {
+    background: #FFFFFF url('silverware.jpg') repeat fixed;
+    font-family: Georgia, Garamond, serif;
+    font-size: 11pt;
+    color: #404040;
+}
+
+h1, h2 {
+    color: #A4A400;
+    background-color: #F0F0F0;
+    text-decoration: underline;
+    font-family: 'Lucida Sans Unicode', 'Helvetica', 'Arial', sans-serif;
+    
+}
+
+h1 {
+    text-align: center;
+    font-size: 22pt;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+h2 {
+    font-size: 18pt;
+    font-weight: normal;
+    text-align: left;
+}
+
+u {
+    text-underline-offset: 4px;
+    text-decoration-style: dotted;
+}
+
+u1 {
+    text-decoration: underline;
+    text-underline-offset: 1px;
+    
+}
+a {
+    color: #A4A400;
+}
+
+abbr[titl] {
+    text-decoration: underline;
+    cursor: help;
+}
+
+abbr[titl]:hover::after {
+    content: attr(titl);
+}
+
+.del {
+    text-decoration: line-through;
+}
+
+.ins {
+    text-decoration: none;
+}
+
+blockquote {
+    background-color: #FFFFA8;
+    font-style: italic;
+    margin: 20px;
+    padding: 10px;
+}
+
+strong {
+    font-weight: bold;
+}
+
+footer pre {
+    font-family: monospace;
+    white-space: pre;
+    text-align: left;
+}
+
