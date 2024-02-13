@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Plan</title>
+    <link rel="stylesheet" type="text/css" href="/csc300x-hw3/css/style.css">
+
+        <!--Font URL Under-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="nav">
+        <a href="index.html"><img src="/csc300x-hw3/images/UNCG-Logo.png" alt="UNCG Logo"></a>
+        <div class="navtext">
+            MEAL PLAN
+        </div>
+    </div>
+
+    <main class="content-wrapper has-columns bg-pattern-gray">
+        <div class="row">
+            <div class="col-lg-6 order-2 order-lg-1 content-area">
+                <h2 class="wp-block-heading">Recommended Places and Dishes</h2>
+                <div class="food-recommendation">
+                    <div class="food-description">
+                        <button class="accordion">Don Gala Pizzeria</button>
+                        <div class="panel">
+                            <h4>Location:</h4>
+                            <p>1101 W Gate City Blvb</p>
+                            <h4>Specialties:</h4>
+                            <p>Authentic Italian pizza</p>
+                            <h4>Hours:</h4>
+                            <p>Monday-Thursday 1pm-10pm; Friday 11:30am-10pm; Saturday 5-10pm</p>
+                            <h4>Recommended Dishes:</h4>
+                            <div class="recommended-dishes">
+                                
+                                <button class="inner-accordion">Don Cheesesteak</button>
+                                <div class="inner-panel">
+                                    <li>Don Cheesesteak - $13.75</li>
+                                    <button class="add-to-meal-plan" data-price="13.75">Add to Meal Plan</button>
+                                </div>
+                                <button class="inner-accordion">Garlic Knots</button>
+                                <div class="inner-panel">
+                                    <li>Garlic Knots - $7.08</li>
+                                    <button class="add-to-meal-plan" data-price="7.08">Add to Meal Plan</button>
+                                </div>
+                                <button class="inner-accordion">2 Gourmet Slices + Drink</button>
+                                <div class="inner-panel">
+                                    <li>2 Gourmet Slices + Drink - $11.00</li>
+                                    <button class="add-to-meal-plan" data-price="11.00">Add to Meal Plan</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="food-description">
+                        <button class="accordion">Sushi Republic</button>
+                        <div class="panel">
+                            <h4>Location:</h4>
+                            <p>329 Tate St</p>
+                            <h4>Specialties:</h4>
+                            <p>Sushi and Authentic Japanese Cuisine</p>
+                            <h4>Hours:</h4>
+                            <p>Monday-Friday Lunch 11:30am-2:30pm and Dinner 5:00pm-9:30pm; Saturday Dinner 5:00-10:00; Sunday
+                                CLOSED</p>
+                            <h4>Recommended Dishes:</h4>
+                            <div class="recommended-dishes">
+                                <button class="inner-accordion">N.C. Roll</button>
+                                <div class="inner-panel">
+                                    <li>N.C. Roll - $7.00</li>
+                                    <button class="add-to-meal-plan" data-price="7.00">Add to Meal Plan</button>
+                                </div>
+                                <button class="inner-accordion">Pork Gyoza</button>
+                                <div class="inner-panel">
+                                    <li>Pork Gyoza - $7.00</li>
+                                    <button class="add-to-meal-plan" data-price="7.00">Add to Meal Plan</button>
+                                </div>
+                                <button class="inner-accordion">Tempura Bomb</button>
+                                <div class="inner-panel">
+                                    <li>Tempura Bomb - $6.00</li>
+                                    <button class="add-to-meal-plan" data-price="6.00">Add to Meal Plan</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="food-description">
+                        <button class="accordion">Timmy's Hot Chicken</button>
+                        <div class="panel">
+                            <h4>Location:</h4>
+                            <p>1040 W Gate City Blvd</p>
+                            <h4>Specialties:</h4>
+                            <p>Spicy Fried Chicken Tenders</p>
+                            <h4>Hours:</h4>
+                            <p>Tuesday-Sunday 11:00am–9:00pm</p>
+                            <h4>Recommended Dishes:</h4>
+                            <div class="recommended-dishes">
+                                <button class="inner-accordion">Timmy Tenders</button>
+                                <div class="inner-panel">
+                                    <li>Timmy Tenders - $12.00</li>
+                                    <button class="add-to-meal-plan" data-price="12.00">Add to Meal Plan</button>
+                                </div>
+                                <button class="inner-accordion">The Cod Father</button>
+                                <div class="inner-panel">
+                                    <li>The Cod Father - $13.00</li>
+                                    <button class="add-to-meal-plan" data-price="13.00">Add to Meal Plan</button>
+                                </div>
+                                <button class="inner-accordion">The Tim</button>
+                                <div class="inner-panel">
+                                    <li>The Tim - $10.00</li>
+                                    <button class="add-to-meal-plan" data-price="10.00">Add to Meal Plan</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="custom-line-break"></div>
+            <div class="col-lg-6 order-2 order-lg-1 content-area">
+                <!-- Meal Plan -->
+                <h2 class="wp-block-heading">Your Meal Plan</h2>
+                <div class="meal-plan">
+                    <!-- Your meal plan will be displayed here -->
+                    <!-- Initially empty, gets populated as dishes are added -->
+                </div>
+
+                <div class="total-cost">
+                    <!-- Total cost of the meal plan will be displayed here -->
+                    <h5>Total Cost: $0.00</h5> <!-- Initial value, gets updated dynamically -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="/csc300x-hw3/js/scripts.js"></script>
+</body>
+
+</html>

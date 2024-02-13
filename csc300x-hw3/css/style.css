@@ -1,0 +1,278 @@
+*, :after, :before {
+    box-sizing: border-box;
+}
+
+body {
+    color: #333;
+    font-family: "SofiaProRegular", sans-serif;
+    font-size: 1rem;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.lato-black {
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+
+.nav {
+    height: 80px;
+    background-color: #0f2044;
+    display: flex;
+    align-items: center;
+}
+
+.nav .navtext {
+    font-size: 30px;
+    color: white;
+    font-family: "Lato", sans-serif;
+    margin-left: auto;
+    padding-right: 20px;
+}
+
+.nav img {
+    height: 60px;
+    padding-left: 20px;
+}
+
+.bg-pattern-gray, .bg-pattern-white {
+    background-repeat: repeat;
+    background-size: 11.31px 11.31px;
+}
+
+.bg-pattern-gray {
+    background-image: linear-gradient(45deg,#eee 12.5%,#f2f2f2 0,#f2f2f2 50%,#eee 0,#eee 62.5%,#f2f2f2 0,#f2f2f2);
+}
+
+
+h1, h2 {
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 2.875rem;
+    padding-left: 20px;
+    margin-bottom: 0.5em;
+    margin-top: 1em;
+}
+
+h2 {
+    padding-left: 40px;
+    font-size: 1.625rem;
+}
+
+h1, h2, h3, h4, h5, h6, p.page-header-vrc {
+    color: #0f2044;
+    font-family: "Lato", sans-serif;
+    margin: 45px 0 24px;
+}
+
+.h1, h1 {
+    font-size: calc(1.375rem + 1.5vw);
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+    margin-top: 0;
+}
+
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight:bold;
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+h3 {
+    padding-left: 20px;
+}
+
+h4 {
+    padding-top: 10px;
+}
+
+h5 {
+    padding-left: 20px;
+    font-weight: 500;
+    font-size: 1.25rem;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-left: 40px;
+    padding-right: 20px;
+
+}
+
+.containers {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    
+}
+
+.row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: calc(var(--bs-gutter-x)*-.5);
+    margin-right: calc(var(--bs-gutter-x)*-.5);
+    margin-top: calc(var(--bs-gutter-y)*-1);
+}
+
+.custom-line-break {
+    width: calc(100% - 40px);
+    height: 1px; /* Adjust as needed */
+    margin: 20px 20px; /* Adjust spacing as needed */
+    background-color: #ffb71b; /* Set your desired color */
+}
+
+.food-recommendation {
+    width: calc(100% - 20px); 
+    padding: 0 20px;
+    padding-bottom: 20px;
+    margin: 0 auto;
+}
+
+
+.accordion {
+    background-color: #0f2044;
+    color: #ffb71b;
+    cursor: pointer;
+    padding: 20px;
+    width: 100%;
+    text-align: left;
+    border: 0px;
+    outline: 0px;
+    transition: 0.4s;
+}
+
+.panel {
+    padding: 0 10px;
+    background-color: #bec0c26d;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.panel p {
+    margin-top: 0;
+}
+
+.accordion.active, .accordion:hover {
+    background-color: #ffb71b;
+    color: #0f2044;
+}
+
+.panel.show {
+    max-height: fit-content;
+}
+
+.recommended-dishes {
+    width: calc(100% - 20px); 
+    padding: 0 20px;
+    padding-bottom: 20px;
+    margin: 0 auto;
+}
+
+.inner-accordion {
+    background-color: #0f2044;
+    color: #ffb71b;
+    cursor: pointer;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    border: 0px;
+    outline: 0px;
+    transition: 0.4s;
+}
+
+.accordion-image {
+    display: inline-block;
+    width: 40px; /* Adjust width as needed */
+    height: 40px; /* Set height equal to the accordion height */
+    background-image: url('/csc300x-hw3/images/DonCheesesteak.png'); /* Set the image path */
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: 10px; /* Adjust spacing between image and text */
+}
+
+.inner-panel {
+    padding: 0 px;
+    background-color: #bec0c29d;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.inner-panel p {
+    margin-top: 0;
+}
+
+.inner-accordion.active, .inner-accordion:hover {
+    background-color: #ffb71b;
+    color: #0f2044;
+}
+
+.inner-panel.show {
+    max-height: fit-content;
+}
+
+.meal-plan-button {
+    padding-top: 10px;
+    padding-left: 40px;
+    padding-bottom: 20px;
+}
+
+.meal-plan-button-link {
+    background-color: #a00c30;
+    border-color: #a00c30;
+    border-radius: 20px;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.meal-plan-button-link:hover {
+    background-color: #fff;
+    border: 3px solid #a00c30;
+    color: #a00c30;
+}
+
+.meal-plan {
+    color: #333;
+    font-family: "SofiaProRegular", sans-serif;
+    font-size: 1.15rem;
+    padding-left: 30px;
+    padding-bottom: 20px;
+}
+
+.total-cost {
+    padding-left: 20px;
+}
