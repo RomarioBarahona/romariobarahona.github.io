@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!--Josefin Sans font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+
+    <!--Manrope font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,500;1,500&family=Manrope:wght@200..800&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <section class="player-section">
+            <h2>Your Throw</h2>
+            <div class="choices">
+                <img src="rock.png" alt="Rock" id="rock" onclick="playerChoice('rock')">
+                <img src="paper.png" alt="Paper" id="paper" onclick="playerChoice('paper')">
+                <img src="scissors.png" alt="Scissors" id="scissors" onclick="playerChoice('scissors')">
+            </div>
+        </section>
+        <section class="computer-section">
+            <h2>Computer's Throw</h2>
+            <img src="question-mark.png" alt="Question Mark" id="computer-choice">
+        </section>
+        <section class="outcome-section">
+            <h2>Outcome</h2>
+            <p id="outcome">Choose your throw to start the game!</p>
+        </section>
+        <section class="score-section">
+            <h2>Score</h2>
+            <p>Wins: <span id="wins">0</span></p>
+            <p>Losses: <span id="losses">0</span></p>
+            <p>Ties: <span id="ties">0</span></p>
+            <button onclick="resetGame()">Reset</button>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
