@@ -24,7 +24,7 @@ function computerChoice() {
 
 function displayComputerChoice(choice) {
   const computerChoiceImg = document.getElementById('computer-choice');
-  computerChoiceImg.src = `${choice}.png`;
+  computerChoiceImg.src = `images/${choice}.png`;
 }
 
 function determineWinner(computerChoice) {
