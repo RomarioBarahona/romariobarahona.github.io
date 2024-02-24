@@ -69,7 +69,7 @@ function resetGame() {
   tieScore = 0;
   updateScoreDisplay();
   updateOutcome('Choose your throw to start the game!');
-  document.getElementById('computer-choice').src = 'question-mark.png';
+  document.getElementById('computer-choice').src = 'images/question-mark.png';
   const choices = document.querySelectorAll('.choices img');
   choices.forEach(img => img.style.border = 'none');
 }
