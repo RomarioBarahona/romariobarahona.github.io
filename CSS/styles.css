@@ -110,7 +110,7 @@ nav ul li a:hover {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-}  
+}
 
 /* General Styling */
 #about,
@@ -144,6 +144,20 @@ nav ul li a:hover {
 /* Style the header for each section */
 .section h2 {
     margin-bottom: 20px;
+}
+
+/* About Me Text Animation */
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(50%);
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
 }
 
 /* Style the project cards */
@@ -225,5 +239,14 @@ footer {
 
 /* Animations */
 @keyframes fade-out {
-    100% { opacity: 0; scale: 1.5; }
-  }
+    100% {
+        opacity: 0;
+        scale: 1.5;
+    }
+}
+
+@media(prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
+}
